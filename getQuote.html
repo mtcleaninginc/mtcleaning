@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Request a free commercial cleaning quote from Modern Touch Cleaning Inc.">
+    <title>Get a Free Quote | Modern Touch Cleaning Inc</title>
+    <link rel="icon" href="Images/pureLogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Styles/contact.css">
+</head>
+
+<body>
+    <header class="site-header"><a class="brand" href="homePage.html" aria-label="Modern Touch home"><img
+                src="Images/pureLogo.png" alt="" class="brand-mark"><span class="brand-copy"><strong>MODERN
+                    TOUCH</strong><small>CLEANING INC</small></span></a><button class="menu-toggle"
+            aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav class="navigation"><a href="homePage.html">Home Page</a><a href="aboutUs.html">About Us</a><a
+                href="services.html">Services</a><a href="contact.html">Contact</a><a href="reviews.html">Reviews</a><a
+                href="faq.html">FAQ</a><a class="quote-button" href="#inquiry">Get Free Quote</a></nav>
+    </header>
+    <main>
+        <section class="contact-hero">
+            <div class="hero-accent"></div>
+            <div class="content hero-copy reveal">
+                <p class="eyebrow">Free Quote</p>
+                <h1>A Plan Made for<br><em>Your Space.</em></h1>
+                <div class="ornament"><span></span><b>✦</b></div>
+                <p>Share a few details about your facility and cleaning needs. We’ll follow up with a customized,
+                    no-obligation quote.</p>
+            </div>
+        </section>
+        <section class="contact-section" id="inquiry">
+            <div class="content contact-grid">
+                <aside class="contact-details reveal">
+                    <p class="eyebrow">Modern Touch Cleaning</p>
+                    <h2>Let’s Get Started.</h2>
+                    <p class="details-intro">Tell us what you need, and we’ll recommend the right service level for your
+                        space and schedule.</p>
+                    <div class="detail-list"><a href="tel:+13232867918"><span class="icon">01</span><span><small>Prefer
+                                    to Call?</small><strong>(323) 286-7918</strong></span></a><a
+                            href="mailto:moderntouchcleaninginc@gmail.com"><span
+                                class="icon">02</span><span><small>Email
+                                    Us</small><strong>moderntouchcleaninginc@gmail.com</strong></span></a>
+                        <div><span class="icon">03</span><span><small>Service Area</small><strong>Los Angeles,
+                                    California</strong></span></div>
+                    </div>
+                </aside>
+                <div class="form-card reveal">
+                    <p class="form-kicker">Request a Quote</p>
+                    <h2>Tell Us About Your Space</h2>
+                    <form id="contact-form">
+                        <div class="field-row"><label>Full Name <span>*</span><input name="name" autocomplete="name"
+                                    required></label><label>Company Name <span>*</span><input name="company"
+                                    autocomplete="organization" required></label></div>
+                        <div class="field-row"><label>Email Address <span>*</span><input type="email" name="email"
+                                    autocomplete="email" inputmode="email"
+                                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+[.][A-Za-z]{2,}"
+                                    title="Enter a complete email address, such as name@mail.com"
+                                    required></label><label>Phone Number <span>*</span><span class="phone-field"><span
+                                        class="phone-prefix" aria-hidden="true">+1</span><input type="tel" name="phone"
+                                        autocomplete="tel-national" inputmode="numeric" placeholder="1234567890"
+                                        pattern="[0-9]{10}" maxlength="10" title="Enter a 10-digit U.S. phone number."
+                                        aria-label="Phone number after country code plus one" required></span></label>
+                        </div><label>Service Needed <span>*</span><select name="service" required>
+                                <option value="" selected disabled>Choose a service</option>
+                                <option>Commercial Cleaning</option>
+                                <option>Move-In / Move-Out</option>
+                                <option>Deep Cleaning</option>
+                                <option>Special Project</option>
+                                <option>Not Sure Yet</option>
+                            </select></label><label>How Can We Help? <span>*</span><textarea name="message" rows="5"
+                                placeholder="Tell us about your space, schedule, and cleaning needs."
+                                required></textarea></label><button type="submit">Request My Free Quote
+                            <b>→</b></button>
+                        <p class="form-note">Submitting opens your email app with your request ready to send.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>© 2026 Modern Touch Cleaning Company. All rights reserved.</footer>
+    <script>const toggle = document.querySelector('.menu-toggle'), nav = document.querySelector('.navigation'); toggle.addEventListener('click', () => {const open = document.body.classList.toggle('menu-open'); toggle.setAttribute('aria-expanded', String(open)); nav.dataset.open = String(open)}); nav.addEventListener('click', () => {document.body.classList.remove('menu-open'); toggle.setAttribute('aria-expanded', 'false'); nav.dataset.open = 'false'}); const phoneInput = document.querySelector('input[name="phone"]'); phoneInput.addEventListener('input', () => {phoneInput.value = phoneInput.value.replace(/\D/g, '').slice(0, 10); phoneInput.setCustomValidity('')}); phoneInput.addEventListener('invalid', () => {phoneInput.setCustomValidity(phoneInput.validity.valueMissing ? 'Please enter your phone number.' : 'Please enter the full 10-digit phone number.')}); const observer = new IntersectionObserver(entries => entries.forEach(e => {if (e.isIntersecting) {e.target.classList.add('visible'); observer.unobserve(e.target)} }), {threshold: .12}); document.querySelectorAll('.reveal').forEach(e => observer.observe(e)); document.querySelector('#contact-form').addEventListener('submit', event => {event.preventDefault(); location.href = 'thankYou.html'});</script>
+</body>
+
+</html>

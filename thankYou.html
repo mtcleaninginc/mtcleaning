@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Thank you for requesting a quote from Modern Touch Cleaning Inc.">
+  <title>Thank You | Modern Touch Cleaning Inc</title>
+  <link rel="icon" href="Images/pureLogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles/contact.css">
+</head>
+<body class="simple-contact-page">
+  <header class="site-header">
+    <a class="brand" href="homePage.html" aria-label="Modern Touch home"><img src="Images/pureLogo.png" alt="" class="brand-mark"><span class="brand-copy"><strong>MODERN TOUCH</strong><small>CLEANING INC</small></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="navigation"><a href="homePage.html">Home Page</a><a href="aboutUs.html">About Us</a><a href="services.html">Services</a><a href="contact.html">Contact</a><a href="reviews.html">Reviews</a><a href="faq.html">FAQ</a><a class="quote-button" href="getQuote.html">Get Free Quote</a></nav>
+  </header>
+  <main class="simple-contact">
+    <section class="simple-contact-inner reveal">
+      <img src="Images/pureLogo.png" alt="Modern Touch Cleaning Inc." class="contact-logo">
+      <p class="eyebrow">Request Received</p>
+      <h1>Thank You!</h1>
+      <div class="ornament"><span></span><b>✦</b></div>
+      <p class="simple-intro">Your free quote request has been received. Our team will review your details and get back to you soon.</p>
+      <a class="simple-quote" href="homePage.html">Back to Home <span>→</span></a>
+    </section>
+  </main>
+  <footer>© 2026 Modern Touch Cleaning Company. All rights reserved.</footer>
+  <script>const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.navigation');toggle.addEventListener('click',()=>{const open=document.body.classList.toggle('menu-open');toggle.setAttribute('aria-expanded',String(open));nav.dataset.open=String(open)});nav.addEventListener('click',()=>{document.body.classList.remove('menu-open');toggle.setAttribute('aria-expanded','false');nav.dataset.open='false'});document.querySelectorAll('.reveal').forEach(element=>element.classList.add('visible'));</script>
+</body>
+</html>

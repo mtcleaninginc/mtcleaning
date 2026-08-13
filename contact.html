@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Modern Touch Cleaning Inc in Los Angeles.">
+    <title>Contact Us | Modern Touch Cleaning Inc</title>
+    <link rel="icon" href="Images/pureLogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Styles/contact.css">
+    <link rel="stylesheet" href="Styles/contactSimple.css">
+</head>
+
+<body class="simple-contact-page">
+    <header class="site-header"><a class="brand" href="homePage.html"><img src="Images/pureLogo.png" alt=""
+                class="brand-mark"><span class="brand-copy"><strong>MODERN TOUCH</strong><small>CLEANING
+                    INC</small></span></a><button class="menu-toggle" aria-label="Open navigation"
+            aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav class="navigation"><a href="homePage.html">Home Page</a><a href="aboutUs.html">About Us</a><a
+                href="services.html">Services</a><a class="active" href="contact.html">Contact</a><a
+                href="reviews.html">Reviews</a><a href="faq.html">FAQ</a><a class="quote-button"
+                href="getQuote.html">Get Free Quote</a></nav>
+    </header>
+    <main class="simple-contact">
+        <section class="simple-contact-inner reveal"><img src="Images/pureLogo.png" alt="" class="contact-logo">
+            <p class="eyebrow">Contact Us</p>
+            <h1>Let’s Stay<br><em>In Touch.</em></h1>
+            <div class="ornament"><span></span><b>✦</b></div>
+            <p class="simple-intro">Questions about our services? Call or email us. We’d be happy to help.</p>
+            <div class="simple-links"><a href="tel:+13232867918"><small>Phone</small><span class="contact-name">Jack
+                        Babajanyan</span><strong>(323) 286-7918</strong></a><a
+                    href="mailto:moderntouchcleaninginc@gmail.com"><small>Email</small><strong>moderntouchcleaninginc@gmail.com</strong></a>
+                <div><small>Serving</small><strong>Los Angeles, California</strong></div>
+            </div><a class="simple-quote" href="getQuote.html">Get a Free Quote <span>→</span></a>
+        </section>
+    </main>
+    <footer>© 2026 Modern Touch Cleaning Company. All rights reserved.</footer>
+    <script>const toggle = document.querySelector('.menu-toggle'), nav = document.querySelector('.navigation'); toggle.addEventListener('click', () => {const open = document.body.classList.toggle('menu-open'); toggle.setAttribute('aria-expanded', String(open)); nav.dataset.open = String(open)}); nav.addEventListener('click', () => {document.body.classList.remove('menu-open'); toggle.setAttribute('aria-expanded', 'false'); nav.dataset.open = 'false'}); requestAnimationFrame(() => document.querySelector('.reveal').classList.add('visible'));</script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+.simple-contact-inner {
+  width: min(1120px, 100%);
+}
+
+.simple-links {
+  grid-template-columns: .9fr 1.45fr 1fr;
+}
+
+.simple-links>* {
+  padding-inline: 28px;
+}
+
+.simple-links strong {
+  overflow-wrap: normal;
+}
+
+.simple-links a[href^="mailto:"] strong {
+  white-space: nowrap;
+}
+
+.contact-name {
+  display: block;
+  margin-bottom: 5px;
+  color: #171719;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .simple-links {
+    grid-template-columns: 1fr;
+  }
+
+  .simple-links>*+* {
+    border-left: 0;
+    border-top: 1px solid #d7ccbf;
+  }
+
+  .simple-links a[href^="mailto:"] strong {
+    white-space: normal;
+  }
+}

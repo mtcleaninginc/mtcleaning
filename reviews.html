@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read what clients say about Modern Touch Cleaning Inc.">
+  <title>Client Reviews | Modern Touch Cleaning Inc</title>
+  <link rel="icon" type="image/png" href="Images/pureLogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles/reviews.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="homePage.html" aria-label="Modern Touch home">
+      <img src="Images/pureLogo.png" alt="" class="brand-mark">
+      <span class="brand-copy"><strong>MODERN TOUCH</strong><small>CLEANING INC</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="navigation" aria-label="Primary navigation">
+      <a href="homePage.html">Home Page</a><a href="aboutUs.html">About Us</a><a href="services.html">Services</a>
+      <a href="contact.html">Contact</a><a class="active" href="reviews.html">Reviews</a><a href="faq.html">FAQ</a>
+      <a class="quote-button" href="getQuote.html">Get Free Quote</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="reviews-hero">
+      <div class="hero-rings" aria-hidden="true"></div>
+      <div class="content hero-copy reveal">
+        <p class="section-label">Client Reviews</p>
+        <h1>Trusted Service.<br><em>Lasting Impressions.</em></h1>
+        <div class="ornament" aria-hidden="true"><span></span><b>✦</b></div>
+        <p>Our clients trust us to keep their spaces polished, healthy, and ready for business. Their experience is the standard we work to uphold every day.</p>
+        <div class="rating-summary" aria-label="Five out of five stars">
+          <span class="stars">★★★★★</span><strong>5.0</strong><small>Consistent care. Exceptional results.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="content">
+        <div class="center-heading reveal"><p class="section-label">What Clients Say</p><h2>Cleaning You Can Count On</h2><span class="mini-rule"></span></div>
+        <div class="reviews-grid">
+          <article class="review-card reveal"><div class="card-top"><span class="stars">★★★★★</span><span class="quote-mark">“</span></div><blockquote>Modern Touch is dependable, thorough, and easy to work with. Our office always feels fresh and ready for the week after their visit.</blockquote><div class="reviewer"><span>JM</span><div><strong>Jordan M.</strong></div></div></article>
+          <article class="review-card featured reveal"><div class="card-top"><span class="stars">★★★★★</span><span class="quote-mark">“</span></div><blockquote>The attention to detail is what stands out. They listened to exactly what our facility needed and have delivered consistently ever since.</blockquote><div class="reviewer"><span>AR</span><div><strong>Alex R.</strong></div></div></article>
+          <article class="review-card reveal"><div class="card-top"><span class="stars">★★★★★</span><span class="quote-mark">“</span></div><blockquote>Professional from the first conversation. The team is punctual, respectful, and leaves every room spotless without disrupting our workday.</blockquote><div class="reviewer"><span>SK</span><div><strong>Sarah K.</strong></div></div></article>
+          <article class="review-card reveal"><div class="card-top"><span class="stars">★★★★★</span><span class="quote-mark">“</span></div><blockquote>We needed a reliable partner for recurring service, and Modern Touch has exceeded expectations. Communication is always quick and clear.</blockquote><div class="reviewer"><span>DL</span><div><strong>Daniel L.</strong></div></div></article>
+          <article class="review-card reveal"><div class="card-top"><span class="stars">★★★★★</span><span class="quote-mark">“</span></div><blockquote>Our move-in cleaning was incredibly detailed. They transformed the space and made opening day feel effortless for our entire team.</blockquote><div class="reviewer"><span>TT</span><div><strong>Tigran T.</strong></div></div></article>
+          <article class="review-card reveal"><div class="card-top"><span class="stars">★★★★★</span><span class="quote-mark">“</span></div><blockquote>Quality, consistency, and genuine care. It is clear they take pride in their work, and our clients notice the difference too.</blockquote><div class="reviewer"><span>HA</span><div><strong>Harutyunyan A.</strong></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="content trust-grid reveal"><div><strong>100%</strong><span>Commitment to quality</span></div><div><strong>5-Star</strong><span>Client-focused service</span></div><div><strong>Local</strong><span>Los Angeles professionals</span></div></div>
+    </section>
+
+    <section class="cta-section">
+      <div class="content cta-inner reveal"><img src="Images/pureLogo.png" alt="" aria-hidden="true"><div><p class="section-label">Experience the Difference</p><h2>Ready for a Space<br>That Always Shines?</h2><p>Tell us what your business needs and we’ll create a cleaning plan made for you.</p></div><a href="getQuote.html">Get Free Quote <span>→</span></a></div>
+    </section>
+  </main>
+
+  <footer>© 2026 Modern Touch Cleaning Company. All rights reserved.</footer>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navigation');
+    toggle.addEventListener('click', () => { const open = document.body.classList.toggle('menu-open'); toggle.setAttribute('aria-expanded', String(open)); toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation'); nav.dataset.open = String(open); });
+    nav.addEventListener('click', () => { document.body.classList.remove('menu-open'); toggle.setAttribute('aria-expanded', 'false'); nav.dataset.open = 'false'; });
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }), { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+  </script>
+</body>
+</html>
