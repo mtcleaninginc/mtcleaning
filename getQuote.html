@@ -4,25 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Request a free commercial cleaning quote from Modern Touch Cleaning Inc.">
-    <title>Get a Free Quote | Modern Touch Cleaning Inc</title>
+    <meta name="description" content="Request a free customized quote for commercial cleaning, office cleaning, deep cleaning, or move-out cleaning services in Los Angeles.">
+    <title>Free Commercial Cleaning Quote Los Angeles | Modern Touch</title>
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://www.mtcleaninginc.com/getQuote">
+    <meta property="og:type" content="website"><meta property="og:site_name" content="Modern Touch Cleaning Inc">
+    <meta property="og:title" content="Get a Free Commercial Cleaning Quote in Los Angeles">
+    <meta property="og:description" content="Tell us about your workplace and receive a customized, no-obligation commercial cleaning quote.">
+    <meta property="og:url" content="https://www.mtcleaninginc.com/getQuote"><meta property="og:image" content="https://www.mtcleaninginc.com/Images/homePageMainPicture.png">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="Images/pureLogo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&amp;family=Montserrat:wght@400;500;600&amp;display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="Styles/contact.css">
 </head>
 
 <body>
-    <header class="site-header"><a class="brand" href="homePage.html" aria-label="Modern Touch home"><img
+    <header class="site-header"><a class="brand" href="/" aria-label="Modern Touch home"><img
                 src="Images/pureLogo.png" alt="" class="brand-mark"><span class="brand-copy"><strong>MODERN
                     TOUCH</strong><small>CLEANING INC</small></span></a><button class="menu-toggle"
             aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-        <nav class="navigation"><a href="homePage.html">Home Page</a><a href="aboutUs.html">About Us</a><a
-                href="services.html">Services</a><a href="contact.html">Contact</a><a href="reviews.html">Reviews</a><a
-                href="faq.html">FAQ</a><a class="quote-button" href="#inquiry">Get Free Quote</a></nav>
+        <nav class="navigation"><a href="/">Home Page</a><a href="/aboutUs">About Us</a><a
+                href="/services">Services</a><a href="/contact">Contact</a><a href="/reviews">Reviews</a><a
+                href="/faq">FAQ</a><a class="quote-button" href="#inquiry">Get Free Quote</a></nav>
     </header>
     <main>
         <section class="contact-hero">
@@ -85,7 +92,7 @@
         </section>
     </main>
     <footer>© 2026 Modern Touch Cleaning Company. All rights reserved.</footer>
-    <script>const toggle = document.querySelector('.menu-toggle'), nav = document.querySelector('.navigation'); toggle.addEventListener('click', () => {const open = document.body.classList.toggle('menu-open'); toggle.setAttribute('aria-expanded', String(open)); nav.dataset.open = String(open)}); nav.addEventListener('click', () => {document.body.classList.remove('menu-open'); toggle.setAttribute('aria-expanded', 'false'); nav.dataset.open = 'false'}); const phoneInput = document.querySelector('input[name="phone"]'); phoneInput.addEventListener('input', () => {phoneInput.value = phoneInput.value.replace(/\D/g, '').slice(0, 10); phoneInput.setCustomValidity('')}); phoneInput.addEventListener('invalid', () => {phoneInput.setCustomValidity(phoneInput.validity.valueMissing ? 'Please enter your phone number.' : 'Please enter the full 10-digit phone number.')}); const observer = new IntersectionObserver(entries => entries.forEach(e => {if (e.isIntersecting) {e.target.classList.add('visible'); observer.unobserve(e.target)} }), {threshold: .12}); document.querySelectorAll('.reveal').forEach(e => observer.observe(e)); document.querySelector('#contact-form').addEventListener('submit', event => {event.preventDefault(); location.href = 'thankYou.html'});</script>
+    <script>const toggle = document.querySelector('.menu-toggle'), nav = document.querySelector('.navigation'); toggle.addEventListener('click', () => {const open = document.body.classList.toggle('menu-open'); toggle.setAttribute('aria-expanded', String(open)); nav.dataset.open = String(open)}); nav.addEventListener('click', () => {document.body.classList.remove('menu-open'); toggle.setAttribute('aria-expanded', 'false'); nav.dataset.open = 'false'}); const phoneInput = document.querySelector('input[name="phone"]'); phoneInput.addEventListener('input', () => {phoneInput.value = phoneInput.value.replace(/\D/g, '').slice(0, 10); phoneInput.setCustomValidity('')}); phoneInput.addEventListener('invalid', () => {phoneInput.setCustomValidity(phoneInput.validity.valueMissing ? 'Please enter your phone number.' : 'Please enter the full 10-digit phone number.')}); const observer = new IntersectionObserver(entries => entries.forEach(e => {if (e.isIntersecting) {e.target.classList.add('visible'); observer.unobserve(e.target)} }), {threshold: .12}); document.querySelectorAll('.reveal').forEach(e => observer.observe(e)); document.querySelector('#contact-form').addEventListener('submit', event => {event.preventDefault(); location.href = '/thankYou'});</script>
 </body>
 
 </html>
