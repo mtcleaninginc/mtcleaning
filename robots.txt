@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /thankYou
+Disallow: /thankYou.html
+
+Sitemap: https://www.mtcleaninginc.com/sitemap.xml
